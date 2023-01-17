@@ -7,10 +7,11 @@ public class CarroEsportivo extends Carro {
 		setDelta(20);
 	}
 	
+	// Sobrescrita
 	public boolean acelerar() {
 		boolean acelerar1 = super.acelerar();
 		boolean acelerar2 = super.acelerar(); 
 		return acelerar1 || acelerar2;
 	}
-
+	
 }
