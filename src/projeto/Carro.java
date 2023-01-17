@@ -11,6 +11,7 @@ public class Carro {
 	
 	public Carro(Integer velocidadeMaxima) {
 		this.velocidadeMaxima = velocidadeMaxima;
+		velocidade = 0;
 		passageiros = 0;
 		passageirosMax = 4;
 	}
@@ -51,10 +52,10 @@ public class Carro {
     }
 	
 	public void removerPassageiros(){
-        if(this.passageiros <= this.passageirosMax){
+        if(this.passageiros <= this.passageirosMax && this.passageiros > 0){
             this.passageiros -= 1;
         } else {
-        	this.passageiros = 0;
+            this.passageiros = 0;
         }
     }
 	
