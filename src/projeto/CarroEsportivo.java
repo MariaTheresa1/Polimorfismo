@@ -13,4 +13,13 @@ public class CarroEsportivo extends Carro {
 		return acelerar1 || acelerar2;
 	}
 	
+	public boolean frear() {
+		if(getVelocidade() >= getDelta()) {
+			setVelocidade(getVelocidade() - getDelta());			
+			return true;
+		} else {
+			setVelocidade(0);			
+		}
+		return false;
+	}
 }
